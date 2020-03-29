@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {
+
+  },
+  "DatabaseSettings": {
+    "CollectionName": "Student",
+    "ConnectionString": "URL",
+    "DatabaseName": "StudentDb"
+  }
+}

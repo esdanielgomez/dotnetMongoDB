@@ -1,0 +1,184 @@
+{
+  "markup": {
+    "controls": [
+      {
+        "tagPrefix": "dot",
+        "namespace": "DotVVM.Framework.Controls",
+        "assembly": "DotVVM.Framework"
+      }
+    ],
+    "assemblies": [],
+    "defaultDirectives": {},
+    "importedNamespaces": [
+      {
+        "namespace": "DotVVM.Framework.Binding.HelperNamespace",
+        "alias": null
+      }
+    ],
+    "DefaultExtensionParameters": []
+  },
+  "routes": {
+    "Default": {
+      "url": "",
+      "virtualPath": "Views/Default.dothtml",
+      "defaultValues": {}
+    },
+    "CRUD_Detail": {
+      "url": "detail/{Id}",
+      "virtualPath": "Views/CRUD/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "CRUD_Edit": {
+      "url": "edit/{Id}",
+      "virtualPath": "Views/CRUD/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "CRUD_Create": {
+      "url": "CRUD/Create",
+      "virtualPath": "Views/CRUD/Create.dothtml",
+      "defaultValues": {}
+    }
+  },
+  "resources": {
+    "ScriptResource": {
+      "dotvvm.polyfill.bundle": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.Polyfills.polyfill.bundle.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 1
+      },
+      "dotvvm.internal": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.min.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [
+          "knockout",
+          "dotvvm.polyfill"
+        ],
+        "RenderPosition": 1
+      },
+      "dotvvm.debug": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.Debug.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [
+          "dotvvm"
+        ],
+        "RenderPosition": 1
+      },
+      "knockout": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.knockout-latest.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 1
+      },
+      "globalize": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.Globalize.globalize.min.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 1
+      }
+    },
+    "DotVVM.Framework.ResourceManagement.PolyfillResource": {
+      "dotvvm.polyfill": {
+        "Dependencies": [],
+        "RenderPosition": 1
+      }
+    },
+    "stylesheets": {
+      "dotvvm.fileUpload-css": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.0, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.FileUpload.css",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/css",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 0
+      },
+      "Styles": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.UrlResourceLocation, DotVVM.Framework",
+          "Url": "~/styles.css"
+        },
+        "LocationFallback": null,
+        "MimeType": "text/css",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 0
+      }
+    },
+    "DotVVM.Framework.ResourceManagement.InlineScriptResource": {
+      "dotvvm": {
+        "Code": "if (window.dotvvm) { throw 'DotVVM is already loaded!'; } window.dotvvm = new DotVVM();",
+        "Dependencies": [
+          "dotvvm.internal"
+        ],
+        "RenderPosition": 1
+      }
+    }
+  },
+  "security": {
+    "signingKey": null,
+    "encryptionKey": null,
+    "sessionIdCookieName": "dotvvm_sid_{0}"
+  },
+  "runtime": {},
+  "defaultCulture": "es-MX",
+  "clientSideValidation": true,
+  "useHistoryApiSpaNavigation": true,
+  "experimentalFeatures": {
+    "lazyCsrfToken": {
+      "includedRoutes": [],
+      "excludedRoutes": []
+    }
+  },
+  "debug": true,
+  "AllowBindingDebugging": false,
+  "compiledViewsAssemblies": [
+    "CompiledViews.dll"
+  ]
+}

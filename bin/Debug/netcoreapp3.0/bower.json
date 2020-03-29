@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {
+
+  },
+  "DatabaseSettings": {
+    "CollectionName": "Student",
+    "ConnectionString": "mongodb://mongodbdotnet:U73UdzaUaQ42N5aiTmkQPxqTJQqqfOQH1rxigQ1gvDGsLcT3u84eg3KSUTANz8RHmmULFkcSnJcBkqYleGhP9A==@mongodbdotnet.documents.azure.com:10255/?ssl=true&replicaSet=globaldb",
+    "DatabaseName": "StudentDb"
+  }
+}
